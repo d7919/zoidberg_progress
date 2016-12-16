@@ -86,7 +86,7 @@ if __name__ == "__main__":
     parser.add_argument('progress', metavar='progress', nargs='?', type=float,
                         help="Number between 0 and 1")
     parser.add_argument('-l', '--length', dest='bar_length', help="Length of the progress bar",
-                        default=40, action='store')
+                        default=40, action='store', type=int)
     parser.add_argument('-a', '--ascii', help="Use '#' as the progress indicator, otherwise use a Unicode character",
                         default=False, action='store_true')
     parser.add_argument('-p', '--pad', help="Pad Zoidberg's claws to stop his head bobbing",
